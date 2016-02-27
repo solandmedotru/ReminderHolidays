@@ -3,4 +3,9 @@
     <string name="app_name">Напоминание праздников</string>
     <string name="menu_item_notification">Напоминания</string>
     <string name="search_title">Поиск</string>
+    <string name="tab_item_birthdays">Дни рождения</string>
+    <string name="tab_item_holidays">Праздники</string>
+    <string name="tab_item_notifications">Уведомления</string>
+    <string name="view_navigation_close">Закрыть</string>
+    <string name="view_navogation_open">Открыть</string>
 </resources>
