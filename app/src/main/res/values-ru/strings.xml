@@ -5,7 +5,7 @@
     <string name="search_title">Поиск</string>
     <string name="tab_item_birthdays">Дни рождения</string>
     <string name="tab_item_holidays">Праздники</string>
-    <string name="tab_item_notifications">Уведомления</string>
+    <string name="tab_item_notifications">Напоминания</string>
     <string name="view_navigation_close">Закрыть</string>
     <string name="view_navogation_open">Открыть</string>
 </resources>
