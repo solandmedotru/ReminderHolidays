@@ -14,10 +14,10 @@ import ru.solandme.reminderholidays.adapter.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int LAYOUT = R.layout.activity_main;
-    Toolbar toolbar;
-    DrawerLayout drawerLayout;
-    ViewPager viewPager;
+    private static final int LAYOUT = R.layout.activity_main;
+    private Toolbar toolbar;
+    private DrawerLayout drawerLayout;
+    private ViewPager viewPager;
 
 
     @Override
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initNavigationView() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.view_navogation_open, R.string.view_navigation_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.view_navigation_open, R.string.view_navigation_close);
         drawerLayout.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.closeDrawers();
 
                 switch (item.getItemId()) {
-                    case R.id.actionNotificationItem:
-                        showNotificationTab();
+                    case R.id.actionReminderItem:
+                        showReminderTab();
 
                 }
                 return true;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void showNotificationTab() {
+    private void showReminderTab() {
         viewPager.setCurrentItem(Constants.TAB_ONE);
     }
 }

@@ -11,7 +11,7 @@ import java.util.Map;
 import ru.solandme.reminderholidays.fragment.AbstractTabFragment;
 import ru.solandme.reminderholidays.fragment.BirthdaysFragment;
 import ru.solandme.reminderholidays.fragment.HolidaysFragment;
-import ru.solandme.reminderholidays.fragment.NotificationsFragment;
+import ru.solandme.reminderholidays.fragment.RemindersFragment;
 
 public class TabsFragmentAdapter extends FragmentPagerAdapter{
 
@@ -42,7 +42,7 @@ public class TabsFragmentAdapter extends FragmentPagerAdapter{
 
     private void initTabsMap(Context context) {
         tabs = new HashMap<>();
-        tabs.put(0, NotificationsFragment.getInstance(context));
+        tabs.put(0, RemindersFragment.getInstance(context));
         tabs.put(1, BirthdaysFragment.getInstance(context));
         tabs.put(2, HolidaysFragment.getInstance(context));
     }

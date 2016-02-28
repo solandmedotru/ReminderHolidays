@@ -11,7 +11,7 @@ import ru.solandme.reminderholidays.R;
 
 public class BirthdaysFragment extends AbstractTabFragment {
 
-    private static final int LAYOUT = R.layout.fragment_notification;
+    private static final int LAYOUT = R.layout.fragment_reminders;
 
     public static BirthdaysFragment getInstance(Context context) {
         Bundle args = new Bundle();
